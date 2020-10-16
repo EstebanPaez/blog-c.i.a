@@ -1,0 +1,65 @@
+.title {
+  text-align: center;
+  height: 300px;
+  width: 1300px;
+  border-bottom: 1px solid black;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  width: 1300px;
+  margin: auto;
+}
+
+.Super {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 116px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header h2 {
+  text-transform: uppercase;
+  font-family: "Commissioner", sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+}
+
+nav {
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  display: flex;
+  width: 200px;
+  border-left: 1px solid black;
+  list-style: none;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ultimo {
+  border-right: 1px solid black;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 200;
+}
+
+li a:hover {
+  color: gray;
+}
