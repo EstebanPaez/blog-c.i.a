@@ -9,16 +9,25 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header id="up">
       <div class="title">
-        <h2>Proyecto Castellano</h2>
-        <a class="Super">Opinión<small>10</small></a>
+        <h2>nuestros pensamientos. en un solo sitio</h2>
+        <a
+          style="text-decoration: none; color: black"
+          href="/index.html"
+          class="Super"
+          >Opinión<small>10</small></a
+        >
       </div>
       <div class="buttons">
         <nav>
@@ -27,7 +36,10 @@
               <a href="">Inicio</a>
             </li>
             <li>
-              <a href="">Columnas</a>
+              <a href=".last-post">Ultimo Post</a>
+            </li>
+            <li>
+              <a href="#columnas">Columnas</a>
             </li>
             <li>
               <a href="">Acerca de</a>
@@ -39,5 +51,24 @@
         </nav>
       </div>
     </header>
+
+    <section class="last-post">
+      <div class="lastContainer">
+        <div class="last-image">
+          <div class="last-title">
+            <p>Ultimo Post</p>
+          </div>
+        </div>
+        <div class="last-details">
+          <h4>16 nov.</h4>
+          <h3>Porque tanta pena de estar aquí?</h3>
+          <p>
+            Esta es una descripcion de el contenido del blog principal, ahora el
+            problema es encontrar alguine que no le de pena estar acá...
+          </p>
+        </div>
+      </div>
+    </section>
+    <a href="#up" class="material-icons"> arrow_drop_up </a>
   </body>
 </html>
