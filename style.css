@@ -230,7 +230,7 @@ li a:hover {
   display: flex;
   flex-direction: column;
   height: 1450px;
-  width: 30vw;
+  width: 31vw;
   border-left: 1px solid black;
   justify-content: flex-end;
 }
@@ -314,13 +314,13 @@ footer {
 }
 
 .phrase-title {
-  width: 640px;
+  width: 30vw;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
 .remember {
-  font-size: 60px;
+  font-size: 50px;
   font-family: "Playfair Display", serif;
   font-weight: 800;
 }
