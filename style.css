@@ -8,6 +8,10 @@ body {
   width: 100%;
 }
 
+.titl2 a {
+  color: black;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +66,10 @@ li {
   align-items: center;
 }
 
+.menu {
+  display: none;
+}
+
 .ultimo {
   border-right: 1px solid black;
 }
@@ -101,15 +109,15 @@ li a {
 }
 
 .last-image .last-title {
-  width: 381px;
-  height: 59px;
+  width: 30vw;
+  height: 13%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   border: 1px solid black;
   position: relative;
-  top: -32px;
+  top: -10%;
   left: -1px;
 }
 
@@ -118,8 +126,8 @@ li a {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.5em;
   text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 200;
 }
 
 .last-details {
@@ -154,7 +162,7 @@ li a:hover {
   color: gray;
 }
 
-.material-icons {
+.material-icons.goUp {
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -178,10 +186,6 @@ li a:hover {
   justify-content: space-evenly;
   margin-top: 35px;
 }
-
-/* .some-postContainer {
-  text-align: start;
-} */
 
 .some-postContainer .button-for {
   text-decoration: none;
@@ -325,6 +329,10 @@ footer {
   font-weight: 800;
 }
 
+.material-icons.burger {
+  display: none;
+}
+
 .phrase-title small {
   font-size: 30px;
   font-weight: 800;
@@ -332,4 +340,232 @@ footer {
 
 .about-me p {
   margin: auto;
+}
+
+.see {
+  display: none;
+}
+
+/* @media screen and (max-width: 1920px) {
+  nav ul li {
+    width: 200px;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  nav ul li {
+    width: 150px;
+  }
+
+  .last-post {
+    padding: 80px 0 60px 0;
+  }
+
+  .last-post .last-title p {
+    font-size: 20px;
+  }
+
+  .last-post .last-title {
+    top: -22px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titl2 {
+    background-color: black;
+    margin: 0;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .titl2 h2 {
+    display: none;
+  }
+
+  .titl2 a {
+    color: white;
+    font-size: 30px;
+  }
+
+  .material-icons.burger {
+    position: fixed;
+    color: white;
+    right: 10px;
+    top: 10px;
+    display: block;
+    z-index: 4;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    left: -800px;
+    transition: 0.3s;
+    top: 10px;
+  }
+
+  .menu a {
+    color: white;
+    margin: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .menu.activate {
+    left: 0;
+  }
+
+  .last-post {
+    width: 100%;
+  }
+
+  .last-details {
+    border-bottom: 1px solid gray;
+  }
+
+  .last-details h4 {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .last-details p {
+    font-size: 14px;
+  }
+
+  .phrase {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lastContainer {
+    width: 80%;
+    border: none;
+  }
+
+  .titl2 {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .last-image {
+    width: 100%;
+    background-position: center;
+  }
+
+  .material-icons.burger {
+    margin: auto;
+    font-size: 30px;
+  }
+
+  .last-post {
+    border: none;
+  }
+
+  .phrase {
+    display: none;
+  }
+
+  .some-postGeneralContainer {
+    width: 100%;
+  }
+
+  .some-postContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .some-post {
+    width: 80%;
+  }
+
+  .button-more {
+    border-bottom: 1px solid gray;
+    height: 60px;
+    width: 80%;
+  }
+
+  .title {
+    align-items: center;
+  }
+
+  .some-info {
+    border-left: none;
+    width: 100%;
+  }
+
+  .about-me {
+    width: 80%;
+  }
+
+  .contact {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .some-postGeneralContainer {
+    padding: 0;
+  }
+
+  .lastContainer {
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .last-post {
+    padding: 0 0 60px 0;
+  }
+
+  .last-image {
+    height: 200px;
+  }
+
+  .last-details {
+    margin: 10px;
+    height: 100px;
+  }
+
+  .last-post h4 {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .last-post h3 {
+    font-size: 16px;
+  }
+
+  .last-details {
+    padding-top: 0;
+  }
+
+  .last-details p {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 10px;
+    display: none;
+  }
 }
