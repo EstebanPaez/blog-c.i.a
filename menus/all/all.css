@@ -157,28 +157,18 @@ li a:hover {
 
 .some-post {
   border: 1px solid black;
-  width: 90vw;
-  height: 300px;
+  width: 70vw;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   text-align: start;
-}
-
-.some-post-image {
-  height: 300px;
-  width: 45%;
-  background-image: url(/assets/image/more-postDemo.jpg);
-  background-size: 600px;
-  background-position-x: -90px;
-  background-position-y: -20px;
-  background-repeat: no-repeat;
+  user-select: none;
 }
 
 .some-post-details {
   padding: 5%;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -194,6 +184,12 @@ li a:hover {
 .some-post-details p {
   margin: 0;
   font-size: 18px;
+}
+
+.some-post-details h3 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  margin: 10px 0;
 }
 
 .some-post-details h3:hover {
@@ -377,5 +373,9 @@ footer {
 
   .post {
     margin-top: 15px;
+  }
+
+  .some-post-details p {
+    font-size: 15px;
   }
 }

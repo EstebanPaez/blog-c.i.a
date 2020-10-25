@@ -1,3 +1,7 @@
+* {
+  user-select: none;
+}
+
 body {
   margin: 0;
 }
@@ -90,10 +94,15 @@ li a {
   border-bottom: 1px solid black;
 }
 
+.title__container {
+  display: none;
+}
+
 .lastContainer {
   height: auto;
   width: 75%;
   border: 1px solid black;
+  user-select: none;
 }
 
 .lastContainer:hover {
@@ -101,11 +110,12 @@ li a {
 }
 
 .last-image {
-  background-image: url(/assets/image/image.png);
+  background-image: url(/assets/image/cardona.jpg);
   background-repeat: no-repeat;
   display: flex;
-  background-size: cover;
   height: 30vw;
+  background-size: cover;
+  background-position-y: -110px;
 }
 
 .last-image .last-title {
@@ -199,8 +209,6 @@ li a:hover {
 .some-postGeneralContainer .title .title-touch {
   font-weight: 300;
   font-family: "Raleway", sans-serif;
-  position: relative;
-  left: -35px;
   font-size: 30px;
   letter-spacing: 0.27em;
   text-transform: uppercase;
@@ -213,6 +221,7 @@ li a:hover {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .some-postContainer a:hover {
@@ -222,7 +231,7 @@ li a:hover {
 .some-post {
   border: 1px solid black;
   width: 50vw;
-  height: 300px;
+  height: auto;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
@@ -242,7 +251,7 @@ li a:hover {
 .some-info {
   display: flex;
   flex-direction: column;
-  height: 1450px;
+  height: auto;
   width: 31vw;
   border-left: 1px solid black;
   justify-content: flex-end;
@@ -250,12 +259,16 @@ li a:hover {
 
 .some-post-image {
   height: 300px;
-  width: 45%;
+  width: 100%;
   background-image: url(/assets/image/more-postDemo.jpg);
   background-size: 600px;
   background-position-x: -90px;
   background-position-y: -20px;
   background-repeat: no-repeat;
+}
+
+.some-post {
+  user-select: none;
 }
 
 .some-post.post1 .some-post-image {
@@ -265,9 +278,26 @@ li a:hover {
   background-position-y: -30px;
 }
 
+.some-post.post2 .some-post-image {
+  background-image: url(/assets/image/david.jpg);
+  background-position-y: 2px;
+}
+
+.some-post.post3 .some-post-image {
+  background-image: url(/assets/image/fem.jpg);
+}
+
+.some-post.post3 h3 {
+  font-size: 16px;
+}
+
+.some-post.post4 .some-post-image {
+  background-image: url(/assets/image/game.jpg);
+}
+
 .some-post-details {
   padding: 5%;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -291,17 +321,61 @@ li a:hover {
 
 .about-me {
   width: 25vw;
-  height: 916px;
-  border: 1px solid black;
   margin: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-me p {
+  margin-top: 15px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  text-align: justify;
 }
 
 .contact {
+  box-sizing: border-box;
   width: 25vw;
-  height: 443px;
-  border: 1px solid black;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 0px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-top: 0;
+  font-family: "Raleway", sans-serif;
+  border-bottom: 1px solid gray;
+}
+
+.contact p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  line-height: 2;
+  /* font-family: "Playfair Display", serif; */
 }
 
 footer {
@@ -351,10 +425,6 @@ footer {
 .phrase-title small {
   font-size: 30px;
   font-weight: 800;
-}
-
-.about-me p {
-  margin: auto;
 }
 
 .see {
@@ -468,12 +538,9 @@ footer {
   .phrase {
     width: 80%;
   }
-}
 
-@media screen and (max-width: 768px) {
   .lastContainer {
-    width: 90%;
-    border: none;
+    width: 100%;
   }
 
   .titl2 {
@@ -493,6 +560,7 @@ footer {
 
   .last-post {
     border: none;
+    margin-bottom: 40px;
   }
 
   .phrase {
@@ -534,6 +602,10 @@ footer {
     width: 80%;
   }
 
+  .about-me p {
+    margin-top: 15px 0;
+  }
+
   .contact {
     width: 80%;
   }
@@ -552,6 +624,9 @@ footer {
   .lastContainer {
     margin-bottom: 30px;
     margin-top: 60px;
+    border: none;
+    width: 100%;
+    margin-top: 50px;
   }
 
   .last-post {
@@ -563,16 +638,18 @@ footer {
   }
 
   .last-details {
-    margin: 10px;
+    margin: 0;
+    height: auto;
   }
 
   .last-post h4 {
     font-size: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-size: 16px;
   }
 
   .last-post h3 {
-    font-size: 16px;
+    font-size: 27px;
   }
 
   .last-details {
@@ -588,12 +665,26 @@ footer {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    display: none;
   }
 
   .title .title-touch {
-    position: initial !important;
-    font-size: 17px !important;
+    font-size: 40px !important;
     margin: 0;
     font-weight: 200 !important;
+  }
+
+  .title__container {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+  }
+
+  .title__container h2 {
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    line-height: 1;
   }
 }

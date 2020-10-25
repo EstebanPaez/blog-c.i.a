@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+}
+
+.titl2 {
+  text-align: center;
+  margin: 35px;
+  width: 100%;
+}
+
+.post {
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.some-post {
+  padding: 2vw 6vw 2vw 6vw;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.some-post h4 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  align-self: flex-start;
+}
+
+.some-post h3 {
+  font-size: 52px;
+  font-weight: bolder;
+  margin: 0;
+  font-family: "Playfair Display";
+}
+
+.some-post h3 small {
+  font-size: 20px;
+}
+
+.autor {
+  font-size: 14px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+
+.regular-text {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: justify;
+  margin: 0;
+}
+
+.regular-text i {
+  text-align: center;
+}
+
+img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.titl2 a {
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.super {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 116px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.super small {
+  color: gray;
+}
+
+header h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: 100;
+}
+
+nav {
+  justify-content: center;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  display: flex;
+  width: 200px;
+  border-left: 1px solid black;
+  list-style: none;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+.ultimo {
+  border-right: 1px solid black;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+li a:hover {
+  color: gray;
+}
+
+.material-icons.goUp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 50px;
+  background-color: white;
+}
+
+.material-icons:active {
+  text-decoration: none;
+}
+
+footer {
+  color: black;
+  width: 100vw;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  margin-top: 20px;
+  background-color: #e8e6e6;
+}
+
+.material-icons.burger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul li {
+    width: 150px;
+  }
+
+  .post {
+    margin-top: 80px;
+  }
+
+  .title a {
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titl2 {
+    background-color: black;
+    margin: 0;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .material-icons.goUp {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .titl2 h2 {
+    display: none;
+  }
+
+  .titl2 a {
+    color: white;
+    font-size: 30px;
+  }
+
+  .material-icons.burger {
+    position: fixed;
+    color: white;
+    right: 10px;
+    top: 10px;
+    display: block;
+    z-index: 4;
+    margin: auto;
+    font-size: 30px;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    left: -800px;
+    transition: 0.3s;
+    top: 10px;
+  }
+
+  .menu a {
+    color: white;
+    margin: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .menu.activate {
+    left: 0;
+  }
+
+  .some-post {
+    width: 90vw;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+
+  .some-post {
+    border: none;
+    margin-top: 0px;
+  }
+
+  .post {
+    margin-top: 45px;
+  }
+
+  .some-post h3 {
+    font-size: 45px !important;
+    line-height: 49px;
+  }
+}
