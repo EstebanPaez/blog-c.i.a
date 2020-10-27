@@ -31,6 +31,24 @@ header {
   margin: 0;
 }
 
+button {
+  background-color: white;
+  border: 1px solid gray;
+  width: 100px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.contact__form {
+  margin-top: 50px;
+}
+
+.spam {
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
 .super small {
   color: gray;
 }
