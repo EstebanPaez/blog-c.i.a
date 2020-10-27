@@ -249,7 +249,7 @@ li a:hover {
 .some-post {
   border: 1px solid black;
   width: 50vw;
-  height: auto;
+  height: 300px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
@@ -275,42 +275,30 @@ li a:hover {
   justify-content: flex-end;
 }
 
-.some-post-image {
-  height: 300px;
-  width: 100%;
-  background-image: url(/assets/image/more-postDemo.jpg);
-  background-size: 600px;
-  background-position-x: -90px;
-  background-position-y: -20px;
-  background-repeat: no-repeat;
-}
-
 .some-post {
   user-select: none;
 }
 
-.some-post.post1 .some-post-image {
-  background-image: url(/assets/image/diaz.png);
-  background-size: 350px;
-  background-position-x: -30px;
-  background-position-y: -30px;
+.some-post-details {
+  width: 100%;
 }
 
-.some-post.post2 .some-post-image {
-  background-image: url(/assets/image/david.jpg);
-  background-position-y: 2px;
+.some-post-image {
+  width: 100%;
 }
 
-.some-post.post3 .some-post-image {
-  background-image: url(/assets/image/fem.jpg);
+.some-post .some-post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .some-post.post3 h3 {
   font-size: 16px;
 }
 
-.some-post.post4 .some-post-image {
-  background-image: url(/assets/image/game.jpg);
+.post4 h3 {
+  font-size: 20px;
 }
 
 .some-post-details {
@@ -485,7 +473,7 @@ footer {
     justify-content: center;
     z-index: 2;
     width: 100vw;
-    z-index: 1;
+    z-index: 100;
   }
 
   .titl2 h2 {
@@ -598,7 +586,7 @@ footer {
   }
 
   .some-post {
-    width: 90%;
+    width: 95%;
   }
 
   .button-more {
