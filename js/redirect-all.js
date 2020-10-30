@@ -14,9 +14,9 @@ document.querySelector(".post4").addEventListener("click", function () {
   window.location = "/2020/04/aceptemos-verdad.html";
 });
 
-document.querySelector(".post5").addEventListener("click", function () {
-  window.location = "/2020/05/defensa-contra.html";
-});
+// document.querySelector(".post5").addEventListener("click", function () {
+//   window.location = "/2020/05/defensa-contra.html";
+// });
 
 document.querySelector(".post6").addEventListener("click", function () {
   window.location = "/2020/06/mente-cuerpo-redes.html";
