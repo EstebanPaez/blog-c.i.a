@@ -37,3 +37,11 @@ document.querySelector(".post9").addEventListener("click", function () {
 document.querySelector(".post10").addEventListener("click", function () {
   window.location = "/2020/10/china.html";
 });
+
+document.querySelector(".post11").addEventListener("click", function () {
+  window.location = "/2020/11/ccc.html";
+});
+
+document.querySelector(".post12").addEventListener("click", function () {
+  window.location = "/2020/12/ciborgs.html";
+});
